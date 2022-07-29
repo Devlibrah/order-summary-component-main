@@ -10,7 +10,6 @@ body{
     margin:70px auto;
     width: 330px;
     height: 700px;
-    border: 1px solid black;
     border-radius:18px;
     background-color: white;
 }
@@ -26,14 +25,13 @@ body{
 .desc{
     text-align: center;
     padding: 15px auto;
-    font-family:"Red Hat Display";
-    font-weight: 900;
 }
 
 .desc-text{
     margin: 15px 20px 15px;
     font-size: 1.6rem;
-    font-family:"Red Hat Display";
+    font-family:"Arial";
+    font-weight: 900;
 }
 
 .desc-subtext{
@@ -51,11 +49,11 @@ body{
     width: 80%;
     border-radius: 10px;
     padding: 7px;
+    font-weight: 700;
     
 }
 
 .music-icon{
-    border: 1px solid black;
     border-radius: 50%;
     position: relative;
     top: 10px;
@@ -66,26 +64,25 @@ body{
     left: 13px;
     bottom: 25px;
     font-family:"Red Hat Display";
+    font-weight: 700;
 }
 
 .plan-price{
     position: relative;
-    right: 71px;
+    right: 79px;
     bottom: 4px;
     font-family:"Red Hat Display";
+    font-weight: 700;
 }
 
 .plan-change{
     position: relative;
     bottom: 40px;
-    left:185px;
+    left:195px;
 }
 
-.action-point{
-    margin: 10px auto;
-    width: 90%;
-    font-family:"Red Hat Display";
-    
+.plan-change:hover{
+    text-decoration: none;
 }
 
 
@@ -93,6 +90,7 @@ body{
     display: inline-block;
     width: 70%;
     margin: 0 25px;
+    box-shadow:3px 20px 30px hsl(224, 23%, 55%);
     background:  hsl(245, 75%, 52%);
     background-image: -webkit-linear-gradient(top,hsl(223, 47%, 23%));
     background-image: -moz-linear-gradient(top,hsl(223, 47%, 23%));
@@ -112,12 +110,12 @@ body{
   }
   
   .btn:hover {
-    background: #3cb0fd;
-    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    background:  hsl(224, 23%, 55%);
+    background-image: -webkit-linear-gradient(top, hsl(224, 23%, 55%));
+    background-image: -moz-linear-gradient(top,  hsl(224, 23%, 55%));
+    background-image: -ms-linear-gradient(top,  hsl(224, 23%, 55%));
+    background-image: -o-linear-gradient(top,  hsl(224, 23%, 55%));
+    background-image: linear-gradient(to bottom,  hsl(224, 23%, 55%));
     text-decoration: none;
   }
 
@@ -131,4 +129,69 @@ body{
     font-family:"Red Hat Display";
     text-decoration: none;
 }
+
+@media only screen and (min-width: 1000px) and (max-width: 1440px){
+    body{
+        background-image: url("order_summary/pattern-background-desktop.svg");
+    }
+    .container{
+        margin: 100px auto;
+        width: 400px;
+        height: 700px;
+        border-radius:18px;
+        background-color: white;
+    }
+
+    .desc-text{
+        margin: 18px 23px;
+    }
+
+    .desc-subtext{
+        margin-top: 3px;
+    }
+
+    .plan-prices{
+        margin: 40px auto 45px;
+        padding: 8px; 
+    }
+
+    .music-icon{
+        position: relative;
+        top: 7px;
+    }
+    
+    .plan-change{
+        position: relative;
+        bottom: 18px;
+        left:10px;
+    }
+    .plan-type{
+        position: relative;
+        left: 10px;
+        bottom: 25px; 
+   }
+   .plan-price{
+    position: relative;
+    right: 80px;
+    bottom: 4px;
+    font-family:"Red Hat Display";
+    padding-bottom: 10px;
+   }
+
+   .btn {
+    display: inline-block;
+    width: 71%;
+    margin: -3px 33px;
+   }
+
+   .cancel{
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    left: 152px;
+
+}
+
+}
+
 
